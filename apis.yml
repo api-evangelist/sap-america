@@ -1,0 +1,186 @@
+name: SAP America
+description: |
+  SAP America, Inc. is the US subsidiary of SAP SE, headquartered in
+  Newtown Square, Pennsylvania, and serving as the Americas headquarters
+  for the parent company's enterprise software portfolio (ERP, SCM, CRM,
+  HCM, analytics, and cloud platform). SAP America itself does not
+  publish a US-specific developer portal or APIs distinct from the parent
+  SAP SE surface — all API documentation, SDKs, and OpenAPI artifacts are
+  catalogued under the sibling `sap` repository (api.sap.com, SAP
+  Business Accelerator Hub, SAP BTP).
+
+  This repo is a subsidiary placeholder that exists to (1) record SAP
+  America as a distinct US legal entity for partnership, public-sector,
+  procurement, and FedRAMP / GovCloud contexts, and (2) cross-link to
+  related US-only sibling subsidiaries — most importantly SAP NS2 (SAP
+  National Security Services), the independent US subsidiary that
+  operates SAP workloads in the Cloud Intelligence Enterprise (CIE), the
+  DoD cloud environment, and the Commercially Regulated Environment
+  (CRE) for federal, defense, and intelligence community customers.
+
+  No tier-1 API artifacts (OpenAPI, AsyncAPI, JSON Schema, capabilities,
+  plans, rate limits, FinOps) are generated in this repo per the
+  api-evangelist no-empty-artifact rule — they are maintained under the
+  parent `sap` repo and the per-product child repos
+  (`sap-business-technology-platform`, `sap-successfactors`,
+  `sap-ariba`, `sap-concur`, `sap-fieldglass`, `sap-api-management`,
+  `sap-integration-suite`).
+image: https://www.sap.com/dam/application/shared/logos/sap-logo.svg
+url: https://www.sap.com/usa/index.html
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.18'
+tags:
+- Subsidiary
+- ERP
+- Enterprise Software
+- Cloud
+- Public Sector
+- United States
+common:
+- type: ParentCompany
+  url: https://github.com/api-evangelist/sap
+- type: Website
+  url: https://www.sap.com/usa/index.html
+- type: GlobalWebsite
+  url: https://www.sap.com
+- type: HumanURL
+  url: https://www.sap.com/about/company/office-locations/north-america.html
+- type: APIPortal
+  url: https://api.sap.com
+- type: DeveloperPortal
+  url: https://developers.sap.com
+- type: GitHubOrg
+  url: https://github.com/SAP
+- type: Newsroom
+  url: https://news.sap.com/
+- type: InvestorRelations
+  url: https://www.sap.com/investors.html
+- type: Careers
+  url: https://jobs.sap.com/?locale=en_US
+- type: PartnerFinder
+  url: https://partneredge.sap.com/en/partnership/sales/find-partner.html
+- type: SupportPortal
+  url: https://support.sap.com
+- type: TrustCenter
+  url: https://www.sap.com/about/trust-center.html
+- type: Privacy
+  url: https://www.sap.com/about/legal/privacy.html
+- type: Legal
+  url: https://www.sap.com/about/legal/impressum.html
+apis:
+- name: SAP America (US Subsidiary)
+  description: |
+    SAP America, Inc. — the US operating subsidiary of SAP SE.
+    No US-specific API portal exists; all developer surfaces are shared
+    with the global SAP organization and are catalogued in the sibling
+    `sap` repo. This entry documents the subsidiary as an entity for
+    procurement, partnership, and public-sector cross-linking.
+  image: https://www.sap.com/dam/application/shared/logos/sap-logo.svg
+  humanUrl: https://www.sap.com/usa/index.html
+  baseUrl: https://api.sap.com
+  tags:
+  - Subsidiary
+  - United States
+  - Enterprise Software
+  properties:
+  - type: Documentation
+    url: https://help.sap.com
+  - type: APIPortal
+    url: https://api.sap.com
+  - type: ParentRegistryEntry
+    url: https://github.com/api-evangelist/sap
+  - type: USHeadquarters
+    url: https://www.sap.com/about/company/office-locations/north-america.html
+  x-headquarters: Newtown Square, Pennsylvania, United States
+  x-parent: SAP SE (Walldorf, Germany)
+  x-us-employees-approx: 19311
+  x-note: |
+    US employee count and Newtown Square HQ corroborated against Wikipedia
+    "SAP" article. All technical API artifacts are deferred to the parent
+    `sap` repository to avoid duplication.
+- name: SAP NS2 (SAP National Security Services)
+  description: |
+    SAP NS2 is an independent US subsidiary of SAP SE that operates SAP
+    cloud and software workloads for the US federal government, the
+    Department of Defense, the Intelligence Community, and commercially
+    regulated industries. NS2 runs three distinct environments — the
+    Cloud Intelligence Enterprise (CIE) aligned with FedRAMP for federal
+    civilian and state/local agencies, a DoD cloud environment for
+    defense customers, and the Commercially Regulated Environment (CRE)
+    for compliance-driven private-sector workloads — typically on top of
+    AWS, Microsoft Azure, and Google Cloud.
+
+    NS2 does not publish its own public OpenAPI surface; customer access
+    is mediated through cleared support channels and authority-to-operate
+    boundaries. This entry documents NS2 as a related US subsidiary that
+    surfaces SAP's standard product APIs (S/4HANA, SuccessFactors, BTP,
+    HANA, Ariba, Analytics Cloud, Integration Suite) inside FedRAMP /
+    IL-rated boundaries.
+  image: https://www.sap.com/dam/application/shared/logos/sap-logo.svg
+  humanUrl: https://sapns2.com/
+  baseUrl: https://sapns2.com/
+  tags:
+  - Subsidiary
+  - Public Sector
+  - Federal
+  - Defense
+  - Intelligence Community
+  - FedRAMP
+  - GovCloud
+  - United States
+  properties:
+  - type: Website
+    url: https://sapns2.com/
+  - type: ParentRegistryEntry
+    url: https://github.com/api-evangelist/sap
+  - type: WikipediaEntry
+    url: https://en.wikipedia.org/wiki/SAP_NS2
+  x-headquarters: Herndon, Virginia, United States
+  x-parent: SAP SE
+  x-environments:
+  - CIE (Cloud Intelligence Enterprise — FedRAMP-aligned, federal civilian and state/local)
+  - DoD Cloud Environment (defense-agency workloads)
+  - CRE (Commercially Regulated Environment — compliance-driven private sector)
+  x-cloud-partners:
+  - Amazon Web Services
+  - Microsoft Azure
+  - Google Cloud
+  x-note: |
+    NS2 is profiled here as a US-only subsidiary surface; if a dedicated
+    `sap-ns2` repo is later created, this entry should move there and
+    this repo should retain only the cross-link.
+include: []
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  url: https://apievangelist.com
+x-type: company
+x-subsidiary-of: sap
+x-tier: 3
+x-tier-reason: no-apis
+x-related-repos:
+- name: sap
+  url: https://github.com/api-evangelist/sap
+  relationship: parent
+- name: sap-business-technology-platform
+  url: https://github.com/api-evangelist/sap-business-technology-platform
+  relationship: sibling-product
+- name: sap-api-management
+  url: https://github.com/api-evangelist/sap-api-management
+  relationship: sibling-product
+- name: sap-integration-suite
+  url: https://github.com/api-evangelist/sap-integration-suite
+  relationship: sibling-product
+- name: sap-successfactors
+  url: https://github.com/api-evangelist/sap-successfactors
+  relationship: sibling-product
+- name: sap-ariba
+  url: https://github.com/api-evangelist/sap-ariba
+  relationship: sibling-product
+- name: sap-concur
+  url: https://github.com/api-evangelist/sap-concur
+  relationship: sibling-product
+- name: sap-fieldglass
+  url: https://github.com/api-evangelist/sap-fieldglass
+  relationship: sibling-product
