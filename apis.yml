@@ -38,6 +38,10 @@ tags:
 - Public Sector
 - United States
 common:
+- type: VulnerabilityDisclosure
+  url: security/sap-america-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/sap-america-domain-security.yml
 - type: ParentCompany
   url: https://github.com/api-evangelist/sap
 - type: Website
@@ -68,6 +72,8 @@ common:
   url: https://www.sap.com/about/legal/privacy.html
 - type: Legal
   url: https://www.sap.com/about/legal/impressum.html
+- url: https://news.sap.com/feed/
+  type: Blog
 apis:
 - name: SAP America (US Subsidiary)
   description: |
