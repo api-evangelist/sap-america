@@ -64,86 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-**Type:** Company (US subsidiary)
-**Parent:** [`sap`](https://github.com/api-evangelist/sap) — SAP SE, Walldorf, Germany
-**Tier:** 3 (`no-apis` — subsidiary surface, all API artifacts live in the parent repo)
-**US Headquarters:** Newtown Square, Pennsylvania
-**Profiled:** 2026-05
+SAP America, Inc. is the US subsidiary of SAP SE, headquartered in Newtown Square, Pennsylvania, and serving as the Americas headquarters for the parent company's enterprise software portfolio (ERP, SCM, CRM, HCM, analytics, and cloud platform). SAP America itself does not publish a US-specific developer portal or APIs distinct from the parent SAP SE surface — all API documentation, SDKs, and OpenAPI artifacts are catalogued under the sibling `sap` repository (api.sap.com, SAP Business Accelerator Hub, SAP BTP). This repo is a subsidiary placeholder that exists to (1) record SAP America as a distinct US legal entity for partnership, public-sector, procurement, and FedRAMP / GovCloud contexts, and (2) cross-link to related US-only sibling subsidiaries — most importantly SAP NS2 (SAP National Security Services), the independent US subsidiary that operates SAP workloads in the Cloud Intelligence Enterprise (CIE), the DoD cloud environment, and the Commercially Regulated Environment (CRE) for federal, defense, and intelligence community customers. No tier-1 API artifacts (OpenAPI, AsyncAPI, JSON Schema, capabilities, plans, rate limits, FinOps) are generated in this repo per the api-evangelist no-empty-artifact rule — they are maintained under the parent `sap` repo and the per-product child repos (`sap-business-technology-platform`, `sap-successfactors`, `sap-ariba`, `sap-concur`, `sap-fieldglass`, `sap-api-management`, `sap-integration-suite`).
 
-## What this repo is
+**Areas:** Subsidiary · ERP · Enterprise Software · Cloud · Public Sector · United States
 
-SAP America, Inc. is the US operating subsidiary of SAP SE and the
-Americas headquarters for the SAP enterprise software portfolio. This
-repository exists as a thin subsidiary placeholder so the API Evangelist
-network can cross-link US-specific surfaces — partnership, public-sector
-procurement, FedRAMP / GovCloud workloads — back to the parent SAP
-profile without duplicating API artifacts.
+## SAP America on APIs.io
 
-**There is no SAP-America-specific developer portal.** All API
-documentation, OpenAPI specs, SDKs, capabilities, plans, rate limits,
-and FinOps artifacts are catalogued under the sibling repos listed
-below.
+Everything profiled for SAP America is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sap-america/](https://apis.io/providers/sap-america/)** — or go straight to one of the APIs or properties below.
 
-## Cross-references
+### APIs (1)
 
-### Parent
-- [`sap`](https://github.com/api-evangelist/sap) — global SAP SE profile,
-  api.sap.com, Business Accelerator Hub, BTP, S/4HANA, SuccessFactors,
-  AI Core, Business One Service Layer.
+- [SAP NS2 (SAP National Security Services)](https://apis.io/apis/sap-america/sap-ns2-sap-national-security-services/) — SAP NS2 is an independent US subsidiary of SAP SE that operates SAP cloud and software workloads for the US federal government, the Department of Defense,…
 
-### Related US-only subsidiary
-- **SAP NS2 (SAP National Security Services)** — independent US
-  subsidiary serving federal civilian, DoD, and Intelligence Community
-  customers from three cloud environments (CIE / DoD / CRE). Tracked as
-  an API entry in [`apis.yml`](./apis.yml). If a dedicated `sap-ns2`
-  repo is later created, the entry should move there.
+### Published properties
 
-### Sibling product repos (global, surfaced inside the US through SAP America)
-- [`sap-business-technology-platform`](https://github.com/api-evangelist/sap-business-technology-platform)
-- [`sap-api-management`](https://github.com/api-evangelist/sap-api-management)
-- [`sap-integration-suite`](https://github.com/api-evangelist/sap-integration-suite)
-- [`sap-successfactors`](https://github.com/api-evangelist/sap-successfactors)
-- [`sap-ariba`](https://github.com/api-evangelist/sap-ariba)
-- [`sap-concur`](https://github.com/api-evangelist/sap-concur)
-- [`sap-fieldglass`](https://github.com/api-evangelist/sap-fieldglass)
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## US-specific surfaces of note
+#### Security (2)
 
-| Surface | URL |
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sap America Domain Security](https://apis.io/security/sap-america/sap-america-domain-security/)
+- [Sap America Vulnerability Disclosure](https://apis.io/security/sap-america/sap-america-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.sap.com/usa/index.html)
+- [Blog](https://news.sap.com/feed/)
+- [Trust centre](https://www.sap.com/about/trust-center.html)
+
+## API Evangelist rating
+
+**Kin Score 13.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| US homepage | https://www.sap.com/usa/index.html |
-| Americas office locations | https://www.sap.com/about/company/office-locations/north-america.html |
-| US careers | https://jobs.sap.com/?locale=en_US |
-| Partner finder (PartnerEdge) | https://partneredge.sap.com/en/partnership/sales/find-partner.html |
-| Trust center | https://www.sap.com/about/trust-center.html |
-| SAP NS2 (US federal subsidiary) | https://sapns2.com/ |
+| Discoverability | 52.7 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
 
-## Why no OpenAPI / capabilities / plans here
+**Agent readiness 0.0** — human-only
 
-Per the API Evangelist pipeline's no-empty-artifact rule, this repo
-intentionally omits:
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-- `openapi/`, `asyncapi/`, `json-schema/`, `json-structure/`, `json-ld/`
-- `examples/`, `capabilities/`, `rules/`, `vocabulary/`
-- `plans/`, `rate-limits/`, `finops/`
+**Regulatory alignment 20.6** — Government & Public Sector
 
-All of those live under the parent [`sap`](https://github.com/api-evangelist/sap)
-repository or under per-product sibling repos. Creating placeholder
-duplicates here would fragment the registry and break the parent-repo
-contract.
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sap-america/](https://apis.io/providers/sap-america/).
 
-## Sources
+## How this profile is made
 
-- Wikipedia, "SAP" — corroborates Newtown Square, PA Americas HQ and
-  ~19,311 US employees.
-- Wikipedia, "SAP NS2" — corroborates NS2 as an independent US
-  subsidiary headquartered in Pennsylvania, three cloud environments
-  (CIE / DoD / CRE), and partnerships with AWS, Microsoft Azure, and
-  Google Cloud.
-- SAP corporate pages returned HTTP 403 to automated fetches at the time
-  of this pipeline run; all SAP-domain URLs above are recorded as
-  references rather than as fetched, quoted content.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Maintainer
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SAP America: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-Kin Lane, API Evangelist — <info@apievangelist.com> — <https://apievangelist.com>
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sap-america/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
